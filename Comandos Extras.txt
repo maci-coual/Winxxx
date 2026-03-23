@@ -1,0 +1,32 @@
+Comandos Extras
+cd nome pasta
+
+Verificar	==> git status 
+
+Rastrear	==> git add .
+
+envelopar os arquivos	==> git commit -m "add uma nova linha no código" 
+ 
+Enviar pro git hub	==> git push 
+ 
+Caso você tenha feito clone do seu repositório em dois computadores, atualizar  ==> git pull
+	
+Caso queira ver o histórico de commits ==> git log --oneline
+
+Se você precisa desfazer as alterações do commit que você fez ==> git reset --hard código do histórico
+
+Caso você tenha feito algo de errado,desfazer o commit ==> git reset --soft HEAD~1
+
+Caso você queira desfazer tudo o que fez ==> git reset --hard HEAD~1
+
+uando você volta para um commit anterior(um ponto do passado) no seu computador ==> git push --force
+
+2:
+Para saber qual nome e email está configurado como autor:
+	==> git config --global user.name
+	==> git config --global user.email
+
+3:
+Para limpar as configurações acima definidas use os comandos abaixo:
+	==> git config --global --unset user.name
+	==> git config --global --unset user.email

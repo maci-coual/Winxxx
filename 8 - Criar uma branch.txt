@@ -1,0 +1,20 @@
+8 - Criar uma branch :
+
+8.1 - Para saber quantas e quais branchs estão criadas no seu projeto	==> git branch
+
+8.2 - Caso queira criar uma nova branch
+	==> git branch nome_da_branch
+
+8.3 - Se quiser trabalhar em outra branch, você precisa definir ela como selecionada, para isso rode o comando	==> git checkout [nome_da_branch]
+
+8.4 - Após isso vá até os arquivos do projeto local e altere algum, feito isso, rode os comandos abaixo:
+	==> git add .
+	==> git commit -m "texto do commit"
+	==> git push
+
+8.5 - Certamente ao rodar esse último comando vai aparecer o erro "fatal: The current branch [nome_da_branch] has no upstream branch.", significa que a sua nova branch não existe no repositório remoto, então precisa rodar o comando abaixo para criar essa nova branch remotamente:
+	==> git push --set-upstream origin [nome_da_branch]
+	Ou de forma mais enxuta:
+	==> git push -u origin [nome_da_branch]
+
+8.6 - Feito isso, vá ate o site do GitHub e atualize a página. Abaixo do título do repositório você verá um botão com o ícone de uma ramificação e a palavra "main" ao lado, clique nele e no menu suspenso que aparecer clique na nova branch que você criou e lá estará o mesmo projeto porém com as novas alterações que fez, caso volte pra branch "main", ela não terá as últimas alterações.
